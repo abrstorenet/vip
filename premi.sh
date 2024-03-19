@@ -310,8 +310,8 @@ clear
 TIME=$(date '+%d %b %Y')
 ipsaya=$(wget -qO- ipv4.icanhazip.com)
 TIMES="10"
-CHATID="5014929660"
-KEY="6593940626:AAEKp-YH7_fGkNPykN1KOLX-rr5fLeRaEcU"
+CHATID="5718127201"
+KEY="6877636583:AAFDJ4AV9GUIlFlvU_fluq93iITZqRiwWjw"
 URL="https://api.telegram.org/bot$KEY/sendMessage"
 restart_system() {
     USRSC=$(wget -qO- https://raw.githubusercontent.com/abrstoree/vip/main/izin | grep $ipsaya | awk '{print $2}')
@@ -535,7 +535,7 @@ print_success "Password SSH"
 function udp_mini(){
 clear
 print_install "Memasang Service Limit Quota"
-wget raw.githubusercontent.com/redmiadevil/vip/main/limit/limit.sh && chmod +x limit.sh && ./limit.sh
+wget raw.githubusercontent.com/abrstoree/vip/main/limit/limit.sh && chmod +x limit.sh && ./limit.sh
 
 cd
 wget -q -O /usr/bin/limit-ip "${REPO}limit/limit-ip"
